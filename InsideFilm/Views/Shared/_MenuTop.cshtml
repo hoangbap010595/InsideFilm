@@ -1,0 +1,184 @@
+﻿<script src="~/js/jQueryv1.7.1.js"></script>
+<div id="megaStore">
+    <ul id="menu">
+        <li>
+            Products
+            <ul>
+                <li>
+                    Furniture
+                    <ul>
+                        <li>Tables & Chairs</li>
+                        <li>Sofas</li>
+                        <li>Occasional Furniture</li>
+                        <li>Children's Furniture</li>
+                        <li>Beds</li>
+                    </ul>
+
+
+                </li>
+                <li>
+                    Decor
+                    <ul>
+                        <li>Bed Linen</li>
+                        <li>Throws</li>
+                        <li>Curtains & Blinds</li>
+                        <li>Rugs</li>
+                        <li>Carpets</li>
+                    </ul>
+                </li>
+                <li>
+                    Storage
+                    <ul>
+                        <li>Wall Shelving</li>
+                        <li>Kids Storage</li>
+                        <li>Baskets</li>
+                        <li>Multimedia Storage</li>
+                        <li>Floor Shelving</li>
+                        <li>Toilet Roll Holders</li>
+                        <li>Storage Jars</li>
+                        <li>Drawers</li>
+                        <li>Boxes</li>
+                    </ul>
+
+                </li>
+                <li>
+                    Lights
+                    <ul>
+                        <li>Ceiling</li>
+                        <li>Table</li>
+                        <li>Floor</li>
+                        <li>Shades</li>
+                        <li>Wall Lights</li>
+                        <li>Spotlights</li>
+                        <li>Push Light</li>
+                        <li>String Lights</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Stores
+            <ul>
+                <li>
+                    <div id="template" style="padding: 10px;">
+                        <h2>Around the Globe</h2>
+                        <ol>
+                            <li>United States</li>
+                            <li>Europe</li>
+                            <li>Canada</li>
+                            <li>Australia</li>
+                        </ol>
+                        <button class="k-button">See full list</button>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Blog
+        </li>
+        <li>
+            Company
+        </li>
+        <li>
+            Events
+        </li>
+        <li disabled="disabled" id="formSearch">
+            <div class="searchform-div">
+                <form method="get" id="form-search" class="searchform" action="/search/">
+                    <div class="search-text-div">
+                        <input type="text" name="keyword" class="search-text k-textbox" value="" placeholder="Search 17plus">
+                    </div>
+                    <div class="search-submit-div">
+                        <input id="searchsubmit" type="submit" class="search-submit k-button" value="Search">
+                    </div>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>
+<style>
+    .search-text-div {
+        margin: 0 50px 0 0;
+    }
+    input.search-text {
+        width: 100%;
+    }
+    .search-submit-div {
+        width: 50px;
+        height: 27px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        padding: 0;
+    }
+    input.search-submit {
+        background: url("/images/s1.png") no-repeat 16px 5px !important;
+        width: 50px;
+        padding: 0;
+        border: 0;
+        height: 27px;
+        overflow: hidden;
+        line-height: 999em;
+        display: block;
+        color: transparent;
+    }
+    li#formSearch {
+        width: 500px;
+        float: right;
+        text-align: right;
+    }
+    .searchform {
+        position: relative;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        margin: 0;
+    }
+    #megaStore {
+        max-width: 80%;
+        margin: 10px auto;
+        /*background: url('../content/web/menu/header.jpg') no-repeat center 0;*/
+    }
+
+    #menu h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 5px 10px;
+    }
+
+    #template img {
+        margin: 5px 20px 0 0;
+        float: left;
+    }
+
+    #template {
+        width: 380px;
+    }
+
+        #template ol {
+            float: left;
+            margin: 0 0 0 30px;
+            padding: 10px 10px 0 10px;
+        }
+
+        #template:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        #template .k-button {
+            float: left;
+            clear: left;
+            margin: 5px 0 5px 12px;
+        }
+</style>
+<script>
+    $(document).ready(function () {
+        $("#menu").kendoMenu();
+    });
+</script>

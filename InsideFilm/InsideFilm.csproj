@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="wwwroot\css\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="wwwroot\css\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="wwwroot\css\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="wwwroot\css\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="wwwroot\css\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="wwwroot\css\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="wwwroot\css\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="wwwroot\css\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="wwwroot\css\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="wwwroot\css\HighContrast\editor.png" />
+    <Content Include="wwwroot\css\HighContrast\imagebrowser.png" />
+    <Content Include="wwwroot\css\HighContrast\indeterminate.gif" />
+    <Content Include="wwwroot\css\HighContrast\loading-image.gif" />
+    <Content Include="wwwroot\css\HighContrast\loading.gif" />
+    <Content Include="wwwroot\css\HighContrast\loading_2x.gif" />
+    <Content Include="wwwroot\css\HighContrast\markers.png" />
+    <Content Include="wwwroot\css\HighContrast\markers_2x.png" />
+    <Content Include="wwwroot\css\HighContrast\slider-h.gif" />
+    <Content Include="wwwroot\css\HighContrast\slider-v.gif" />
+    <Content Include="wwwroot\css\HighContrast\sprite.png" />
+    <Content Include="wwwroot\css\HighContrast\sprite_2x.png" />
+    <Content Include="wwwroot\css\HighContrast\sprite_kpi.png" />
+    <Content Include="wwwroot\css\HighContrast\sprite_kpi_2x.png" />
+    <Content Include="wwwroot\css\images\back.png" />
+    <Content Include="wwwroot\css\images\kendoui.svg" />
+    <Content Include="wwwroot\css\images\kendoui.ttf" />
+    <Content Include="wwwroot\css\images\kendoui.woff" />
+    <Content Include="wwwroot\css\images\wp8_icons.png" />
+    <Content Include="wwwroot\css\images\wp8_inverseicons.png" />
+    <Content Include="wwwroot\css\kendo.common.min.css" />
+    <Content Include="wwwroot\css\kendo.common.min.css.map" />
+    <Content Include="wwwroot\css\kendo.highcontrast.min.css" />
+    <Content Include="wwwroot\css\kendo.highcontrast.min.css.map" />
+    <Content Include="wwwroot\css\kendo.highcontrast.mobile.min.css" />
+    <Content Include="wwwroot\css\kendo.highcontrast.mobile.min.css.map" />
+    <Content Include="wwwroot\css\textures\brushed-metal.png" />
+    <Content Include="wwwroot\css\textures\dots1.png" />
+    <Content Include="wwwroot\css\textures\dots10.png" />
+    <Content Include="wwwroot\css\textures\dots11.png" />
+    <Content Include="wwwroot\css\textures\dots12.png" />
+    <Content Include="wwwroot\css\textures\dots13.png" />
+    <Content Include="wwwroot\css\textures\dots2.png" />
+    <Content Include="wwwroot\css\textures\dots3.png" />
+    <Content Include="wwwroot\css\textures\dots4.png" />
+    <Content Include="wwwroot\css\textures\dots5.png" />
+    <Content Include="wwwroot\css\textures\dots6.png" />
+    <Content Include="wwwroot\css\textures\dots7.png" />
+    <Content Include="wwwroot\css\textures\dots8.png" />
+    <Content Include="wwwroot\css\textures\dots9.png" />
+    <Content Include="wwwroot\css\textures\glass-lighter.png" />
+    <Content Include="wwwroot\css\textures\glass.png" />
+    <Content Include="wwwroot\css\textures\highlight.png" />
+    <Content Include="wwwroot\css\textures\hsv-gradient.png" />
+    <Content Include="wwwroot\css\textures\hue.png" />
+    <Content Include="wwwroot\css\textures\leather1.png" />
+    <Content Include="wwwroot\css\textures\leather2.png" />
+    <Content Include="wwwroot\css\textures\noise.png" />
+    <Content Include="wwwroot\css\textures\stripe1.png" />
+    <Content Include="wwwroot\css\textures\stripe2.png" />
+    <Content Include="wwwroot\css\textures\stripe3.png" />
+    <Content Include="wwwroot\css\textures\stripe4.png" />
+    <Content Include="wwwroot\css\textures\stripe5.png" />
+    <Content Include="wwwroot\css\textures\stripe6.png" />
+    <Content Include="wwwroot\css\textures\transparency.png" />
+    <Content Include="wwwroot\css\textures\transtexture.png" />
+    <Content Include="wwwroot\images\s1.png" />
+    <Content Include="wwwroot\js\jquery.min.js" />
+    <Content Include="wwwroot\js\jquery.min.map" />
+    <Content Include="wwwroot\js\jQueryv1.7.1.js" />
+    <Content Include="wwwroot\js\kendo.all.min.js" />
+    <Content Include="wwwroot\js\kendo.all.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
