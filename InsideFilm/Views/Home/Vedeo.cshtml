@@ -1,8 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<style>
+﻿<style>
     #divShowVedeo {
         width: 100%;
         box-sizing: border-box;
@@ -10,12 +6,13 @@
     }
 
     .Vleft {
-        width: 55%;
+        width: 60%;
         float: left;
+        padding-right:10px;
     }
 
     .Vright {
-        width: 45%;
+        width: 35%;
         float: right;
     }
 
@@ -45,68 +42,113 @@
 
     .download {
         float: right;
-        width:100px;
+        width: 100px;
     }
 
     #botVedeo {
-        padding:10px;
+        padding: 10px;
         border: solid 1px #340826;
-        background-color:#515151;
+        background-color: #515151;
     }
-    #botVedeo button{
-        padding:5px;
+
+        #botVedeo button {
+            padding: 5px;
+        }
+
+    #contentVedeo {
+        padding: 10px;
     }
-    #contentVedeo{
-        padding:10px;
-    }
+
     .PrefVedeo {
         padding: 5px;
         margin: 10px 20px 0 0;
         background-color: #2C232B;
     }
+
     .PrefVedeo2 {
         padding: 5px;
         background-color: #2C232B;
+        margin-bottom: 10px;
     }
+
     .PrefVedeo3 {
         padding: 5px;
-        margin-top:10px;
+        margin-top: 10px;
         background-color: #2C232B;
     }
+
     .menuFilm {
-            white-space: nowrap;
-            color: #dacb46;
-            overflow: hidden;
-            font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: 26px;
-            font-weight: 300;
-        }
-    .full-tab{
+        white-space: nowrap;
+        color: #dacb46;
+        overflow: hidden;
+        font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    .full-tab {
         width: 33%;
-        text-align:center;
+        text-align: center;
     }
 </style>
-
 <div id="divShowVedeo">
+    
     <div class="Vleft">
-        <div class="demo-section k-content wide" style="max-width: 100%; margin-right: 20px;">
-            <div id="mediaplayer" style="height:360px"></div>
-            <h3 id="titleVedeo"></h3>
-            <div id="botVedeo">
-                <button class="k-button" disabled="disabled">10.000.000 views</button>
-                <button class="download k-button k-primary">Tải xuống</button>
+        <div class="PrefVedeo2">
+            <p class="menuFilm">XEM NHIỀU NHẤT</p>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
             </div>
-            <div id="contentVedeo">
-                <article>
-                    <p id="content">Hôm nay là ngày đầu tuần nên người vợ mới cưới của tôi đã dậy từ sớm để chuẩn bị bữa sáng cho hai người, tôi bước xuống lầu và bắt gặp bờ mông căng mọng của em vì em chỉ mặt tạp dề mà ko mặt thêm gì cả bình thường em đã xinh và dâm lắm rồi thế này nữa thì tôi chịu sao nổi emoticons, tôi và em cùng ngồi xuống sofa và tay tôi liền tìm đến cặp vú hồng hào với đầu ti nhỏ nhắn xinh xinh của em bóp lấy bóp để, chúng tôi trao nhau những nụ hôn dâm dục và sờ mó khắp người nhau em bú chim và tôi thì cũng thế....</p>
-                    <p>Thể loại:</p>
-                    <p>Từ khóa:</p>
-                </article>
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
             </div>
         </div>
-        <div class="PrefVedeo">
-            <p class="menuFilm">PHIM LIÊN QUAN</p>
+        <div class="PrefVedeo2">
+            <p class="menuFilm">HỌC SINH</p>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+                <div class="col-lg-4">
+                    @Html.Partial("_ItemVedeoRan")
+                </div>
+            </div>
+        </div>
+        <div class="PrefVedeo2">
+            <p class="menuFilm">GIA ĐÌNH</p>
 
             <div class="row">
                 <div class="col-lg-4">
@@ -166,18 +208,10 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
+
+<script>
     $(document).ready(function () {
 
-        $("#mediaplayer").kendoMediaPlayer({
-            autoPlay: false,
-            navigatable: true,
-            media: {
-                title: "Recap of Progress Ringing The Bell at Nasdaq (2016)",
-                source: "https://www.youtube.com/watch?v=tc3xhD24iTU"
-            }
-        });
-        $("#titleVedeo").html("Recap of Progress Ringing The Bell at Nasdaq (2016)");
         $("#tabstrip").kendoTabStrip({
             animation: {
                 open: {

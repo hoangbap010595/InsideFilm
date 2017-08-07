@@ -12,7 +12,10 @@ namespace InsideFilm.Controllers
         {
             return View();
         }
-
+        public IActionResult Vedeo()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
